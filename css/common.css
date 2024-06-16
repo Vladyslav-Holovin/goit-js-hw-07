@@ -12,3 +12,275 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+
+/*Task 1*/
+
+ul {
+  list-style: none;
+}
+
+#categories .item {
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #f6f6fe;
+  margin: 0 auto 24px auto;
+  max-width: 392px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+#categories .item h2 {
+  margin-bottom: 16px;
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+}
+
+#categories .item ul {
+  padding-left: 0;
+}
+
+#categories .item ul li {
+  border: 1px solid #808080;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+/*Task 2*/
+
+.gallery {
+  display: flex;
+  column-gap: 24px;
+  row-gap: 48px;
+  flex-wrap: wrap;
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.gallery li {
+  width: calc((100% - 48px) / 3);
+}
+
+/*Task 3*/
+#name-input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+
+#name-input:focus {
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+#name-input::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+/*Task 4*/
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.login-form label input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  height: 40px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+.login-form button[type='submit'] {
+  margin-top: 16px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  max-width: 86px;
+  border: none;
+  background-color: #4e75ff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: background-color 350ms linear;
+}
+
+.login-form button[type='submit']:hover,
+.login-form button[type='submit']:focus {
+  background-color: #6c8cff;
+  cursor: pointer;
+}
+
+/*Task 5*/
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 345px;
+  margin: 0 auto;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 100px 58px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.widget p {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.widget button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: none;
+  height: 40px;
+  background-color: #4e75ff;
+  transition: all 350ms linear;
+}
+
+.widget button:hover,
+.widget button:focus {
+  border: none;
+  background-color: #6c8cff;
+  cursor: pointer;
+}
+
+/*Task 6*/
+
+#controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 32px;
+  background-color: #f6f6fe;
+  width: 490px;
+  margin: 0 auto 16px auto;
+}
+
+#controls input::-webkit-outer-spin-button,
+#controls input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#controls input[type='number'] {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px;
+  min-width: 150px;
+  height: 40px;
+  text-align: center;
+  background-color: #f6f6fe;
+}
+
+#controls button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 120px;
+  height: 40px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+button {
+  background-color: #4e75ff;
+  transition: all 350ms linear;
+}
+
+button:last-child {
+  background-color: #ff4e4e;
+}
+
+button:hover,
+button:focus {
+  cursor: pointer;
+  background-color: #6c8cff;
+}
+
+button:last-child:hover,
+button:last-child:focus {
+  background-color: #ff7070;
+}
+
+#boxes {
+  padding: 32px;
+  display: flex;
+  gap: 44px;
+  border-radius: 8px;
+  width: 490px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  background-color: #f6f6fe;
+}
+
+#boxes div {
+  flex-shrink: 1;
+}
