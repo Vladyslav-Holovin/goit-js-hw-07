@@ -32,5 +32,4 @@ const gallery = images
       `<li class="list-item"><img src="${image.url}" alt="${image.alt}" width="360" height="300"></li>`
   )
   .join('');
-console.log(gallery);
 list.innerHTML = gallery;

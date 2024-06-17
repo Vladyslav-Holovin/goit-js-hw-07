@@ -8,25 +8,28 @@ const createButton = document.querySelector('#controls button[data-create]');
 const destroyButton = document.querySelector('#controls button[data-destroy]');
 const inputField = document.querySelector('#controls input');
 const boxesContainer = document.querySelector('#boxes');
-const width = 30;
-const height = 30;
+const dimensions = 30;
+let boxes = [];
 let count = 0;
 
 inputField.addEventListener('input', event => {
   count = event.currentTarget.value;
-  console.log(count);
 });
 
 createButton.addEventListener('click', () => {
   boxesContainer.innerHTML = '';
+  boxes = [];
   if (count >= 1 && count <= 100) {
-    /*подумать*/
     for (let i = 0; i < count; i++) {
-      boxesContainer.innerHTML += `<div class="created-box box-${i}" style="background-color:${getRandomHexColor()}; width:${
-        width + i * 10
-      }px; height:${height + i * 10}px"></div>`;
+      boxes.push(dimensions + i * 10);
     }
-    /*подумать*/
+    const markup = boxes
+      .map(
+        box =>
+          `<div class="created-box" style="background-color:${getRandomHexColor()}; width:${box}px; height:${box}px"></div>`
+      )
+      .join('');
+    boxesContainer.innerHTML = markup;
   }
   count = 0;
   inputField.value = '';
@@ -34,6 +37,7 @@ createButton.addEventListener('click', () => {
 
 destroyButton.addEventListener('click', () => {
   count = 0;
+  boxes = [];
   inputField.value = '';
   boxesContainer.innerHTML = '';
 });
