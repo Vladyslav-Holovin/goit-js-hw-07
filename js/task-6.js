@@ -20,11 +20,13 @@ inputField.addEventListener('input', event => {
 createButton.addEventListener('click', () => {
   boxesContainer.innerHTML = '';
   if (count >= 1 && count <= 100) {
+    /*подумать*/
     for (let i = 0; i < count; i++) {
       boxesContainer.innerHTML += `<div class="created-box box-${i}" style="background-color:${getRandomHexColor()}; width:${
         width + i * 10
       }px; height:${height + i * 10}px"></div>`;
     }
+    /*подумать*/
   }
   count = 0;
   inputField.value = '';
